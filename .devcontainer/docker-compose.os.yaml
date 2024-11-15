@@ -1,0 +1,19 @@
+##########################################################################################
+# DO NOT MODIFY THE CONTENTS OF THIS FILE! The contents of this file are automatically
+# generated and replaced during the devcontainer initialization process. To make changes, 
+# please edit `docker-compose.os-xxx.yaml` instead.
+##########################################################################################
+version: '3.8'
+services:
+  cv_workspace:
+    network_mode: bridge
+    volumes:
+      - /run/desktop/mnt/host/wslg:/mnt/wslg
+      - /run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix
+    environment:
+      DISPLAY: ":0"
+      WAYLAND_DISPLAY: "wayland-0"
+      XDG_RUNTIME_DIR: "/mnt/wslg/runtime-dir"
+      PULSE_SERVER: "/mnt/wslg/PulseServer"
+      LIBGL_ALWAYS_SOFTWARE: "1"
+      LIBGL_ALWAYS_INDIRECT: "1"

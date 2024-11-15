@@ -1,1 +1,3 @@
 # CV_WORKSAPCE
+已经保证其可以在windows上正常运行啦。对于基础镜像采用了一个国内源来实现，对于ubuntu本身也使用了阿里源来加速拉取。
+使用vscode的devcontainer可以很方便的在本地拉取镜像进行构建
