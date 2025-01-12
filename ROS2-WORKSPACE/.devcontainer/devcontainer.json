@@ -1,6 +1,6 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-	"name": "VINS MONO",
-	"service": "cv_workspace",
+	"service": "cygnomatic_workspace",
 	"initializeCommand": "bash .devcontainer/setup_container.sh",
 	"dockerComposeFile": [
 		"docker-compose.yaml",
@@ -9,8 +9,7 @@
 	],
 	"workspaceFolder": "/workspace",
 	"shutdownAction": "stopCompose",
-	"remoteUser": "root",
-  	"logLevel": "debug",
+	"remoteUser": "ros",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -29,8 +28,7 @@
 				"donjayamanne.githistory",
 				"CodeInChinese.EnglishChineseDictionary",
 				"ms-python.black-formatter",
-				"llvm-vs-code-extensions.vscode-clangd",
-				"ms-vscode-remote.remote-containers"
+				"llvm-vs-code-extensions.vscode-clangd"
 			]
 		}
 	}
